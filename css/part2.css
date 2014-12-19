@@ -1,0 +1,24 @@
+p {
+	font-size: 2.5em;
+	font-family: "Garamond", Georgia, serif;
+}
+
+blockquote {
+	padding-bottom: 25px;
+}
+
+video {
+	width: 510px;
+}
+
+audio {
+	width: 510px;
+}
+
+#jp_container_1 {
+	width: 510px;
+}
+
+#jp_container_2 {
+	width: 510px;
+}

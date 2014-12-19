@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Part 3: jQuery Mobile</title>
+	<link rel="stylesheet" href="css/anthem.min.css">
+	<link rel="stylesheet" href="css/jquery.mobile.icons.min.css">
+ 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css">
+    <link rel="stylesheet" href="css/part3.css">
+    <link rel="prefetch" href="assets/apple.jpg">
+</head>
+
+<body>
+    
+<!-- Main Page -->
+    <section data-role="page" id="home">
+    	<header data-role="header" data-position="fixed">
+        	<nav data-role="navbar">
+                <ul>
+                    <li><a href="#home" class="ui-btn-active">HOME</a></li>
+                    <li><a href="#anthropology" data-transition="pop">ANTHROPOLOGY</a></li>
+                    <li><a href="#">UX</a></li>
+                    <li><a href="#contact" data-transition="pop">CONTACT</a></li>
+                </ul>
+            </nav>
+    	</header>
+    	<main data-role="main" class="ui-content">
+            <div class="ui-corner-all custom-corners" data-theme="a">
+                <div class="ui-bar ui-bar-a">
+                    <h2>ABOUT ME</h2>
+                </div>
+                <div class="ui-grid-a ui-body ui-body-a">
+                    <div class="ui-block-a">
+                		<p>Born and raised on the tiny - beautiful, but <strong>TINY</strong> - island of O'ahu, I always wanted to see and learn about the big world beyond the shores of Hawai'i. I thus earned my BA (University of Hawai'i at Manoa, 2010) and MA (Harvard University, 2013) in Anthropology.</p>
+						<p>As part of my research, I traveled to (and lived in) Japan, Australia, and across the US. I have worked on ethnographic projects ranging from consumer perceptions of genetically modified crops to a local folk legend about the death of Jesus Christ in Japan (yes, <em>Japan</em>).</p>
+						<button class="show-page-loading-msg" data-textonly="false" data-textvisible="true" data-msgtext="LOADING!" data-inline="true">Aloha!
+						</button>
+                    </div>
+                    <div class="ui-block-b" id="beach">
+            			<img src="assets/hawaii.jpg" alt="Island Life">
+                    </div>
+                </div>
+            </div>
+            <div class="ui-grid-b">
+                <div class="ui-block-a">
+            	    <h3><a href="#">Anthropology</a></h3>
+                    <p>I have conducted 4 ethnographic projects in Australia, Japan, and the United States.</p>
+                    <p><a href="#" data-role="button" data-icon="location">Learn more!</a></p>
+                </div>
+                <div class="ui-block-b">
+                    <h3><a href="#">User Experience</a></h3>
+                    <p>I am pursuing a graduate certificate in Web Technologies at Harvard Extension School.</p>
+                    <p><a href="#" data-role="button" data-icon="user">Learn more!</a></p>
+                </div>
+                <div class="ui-block-c">
+                    <h3><a href="#contact">Contact</a></h3>
+                    <p>I am always excited to hear from others. Everyone has a story. Tell me yours!</p>
+                    <p><a href="#contact" data-role="button" data-icon="mail">Send me a message!</a></p>
+                </div>
+            </div>
+    	</main>
+        <footer data-role="footer">
+            <p>2014 Neal Adolph Akatsuka. All rights reserved.</p>
+        </footer>
+    </section>
+
+<!-- Anthropology page -->
+    <section data-role="page" id="anthropology" data-theme="a">
+    	<header data-role="header" data-position="fixed">
+        	<nav data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-transition="pop">HOME</a></li>
+                    <li><a href="#anthropology" class="ui-btn-active">ANTHROPOLOGY</a></li>
+                    <li><a href="#">UX</a></li>
+                    <li><a href="#contact" data-transition="pop">CONTACT</a></li>
+                </ul>
+            </nav>
+    	</header>
+        <section data-role="main" class="ui-content">
+            <h2>PROJECTS</h2>
+           	<div data-role="collapsible">
+    			<h4>Jesus in Japan</h4>
+    			<p>My inaugural ethnographic fieldwork project took me to Shingo Mura in Aomori Prefecture. By all appearances your average Japanese village in the idyllic countryside, Shingo is home to the キリストの墓 (Grave of Christ), based on a <a href="http://www.smithsonianmag.com/history/the-little-known-legend-of-jesus-in-japan-165354242/" target="_blank">local legend about the visitation and death of Jesus Christ</a> in the village. While previous journalistic accounts of the legend focused on exocitizing or debunking the validity of the legend (<a href="http://news.bbc.co.uk/2/hi/programmes/from_our_own_correspondent/5326614.stm" target="_blank">here</a> and <a href="http://www.japantimes.co.jp/life/2011/12/25/life/behold-christs-grave-in-shingo-aomori-prefecture/#.VDbv8-e0bYA" target="_blank">here</a>, for example), I was interested in learning about how the legend shaped life in the village for residents.</p>
+			</div>
+           	<div data-role="collapsible">
+    			<h4>Genetically Modified Food in Japan</h4>
+    			<p>Since working as an undergraduate in the <a href="http://www.ctahr.hawaii.edu/molecularecology/bop.html" target="_blank">Biotechnology Outreach Program at the University of Hawai'i</a> with Dr. Ania Wieczorek, I have been intensely interested in the intersection between science, technology, and society. In this ethnographic research project, I dedicated almost a year to studying Japanese consumer and activist experiences of genetically modified (GM) food in and around Tokyo.</p>
+			</div>
+           	<div data-role="collapsible">
+    			<h4>Genetically Modified Papaya in Hawai'i</h4>
+    			<p>Concerned with the growing public debate about the place of genetically modified (GM) food in Hawai'i - a hotspot, due to its climate, for experiments and plantings of GM crops - I set out to analyze local consumer, farmer, and activist experiences of GM papaya.</p>
+			</div>
+           	<div data-role="collapsible">
+    			<h4>Genetically Modified Flowers in Japan & Australia</h4>
+    			<p>While genetically modified (GM) crops are in general ubiquitously rejected by consumers (as evidenced by my previous study of GM food), GM blue flowers (e.g., roses, carnationas, and lilies) are not only allowed to grow in Japan, but also enjoy the favor (or at least, apathy) of Japanese consumers. In this project, I sought to understand the exceptional acceptance by Japanese consumers of such flowers and the history of scientific collaboration between Japanese and Australian scientists in the development of GM blue flowers.</p>
+			</div>
+    	</section>
+        <footer data-role="footer">
+            <p>2014 Neal Adolph Akatsuka. All rights reserved.</p>
+        </footer>
+    </section>
+
+<!-- Contact Page -->
+    <section data-role="page" id="contact" data-theme="a">
+        <header data-role="header" data-position="fixed">
+            <nav data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-transition="pop">HOME</a></li>
+                    <li><a href="#anthropology" data-transition="pop">ANTHROPOLOGY</a></li>
+                    <li><a href="#">UX</a></li>
+                    <li><a href="#contact" class="ui-btn-active">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section data-role="main" class="ui-content">
+        	<h2>CONTACT ME</h2>
+			<form id="message">
+				<div class="ui-grid-a">
+					<div class="ui-block-a">
+						<label for="name">Name*</label>
+						<input type="text" id="name" name="name" value="">
+					</div>
+					<div class="ui-block-b">
+						<label for="email" class="control-label">Email*</label>
+						<input type="text" id="email" name="email" value="">
+					</div>
+				<div>
+					<label for="slider">How much do you want to talk with me?</label>
+					<input name="slider" id="slider" value="0" min="0" max="100" type="range">
+				</div>
+				<div>
+					<fieldset data-role="controlgroup">
+						<legend>When is the best time to reply to you?</legend>
+							<input name="radio-choice-1" id="radio-choice-1" value="choice-1" checked="checked" type="radio">
+					        <label for="radio-choice-1">Morning</label>
+					        <input name="radio-choice-1" id="radio-choice-2" value="choice-2" type="radio">
+					        <label for="radio-choice-2">Afternoon</label>
+					        <input name="radio-choice-1" id="radio-choice-3" value="choice-3" type="radio">
+					        <label for="radio-choice-3">Evening</label>
+					</fieldset>
+				</div>
+				<div>
+					<button class="ui-button">Submit</button>
+				</div>
+			</form>
+        </section>
+        <footer data-role="footer">
+            <p>2014 Neal Adolph Akatsuka. All rights reserved.</p>
+        </footer>
+    </section>
+
+
+<!-- Javascript -->
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="js/part3.js"></script>
+
+</body>
+</html>

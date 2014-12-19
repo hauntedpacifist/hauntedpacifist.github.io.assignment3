@@ -1,0 +1,22 @@
+img {
+	width: 100%;
+	max-width: 100%;
+}
+
+.night {
+	background-color: black;
+}
+
+@media all and (max-width: 768px) {
+	#home .ui-grid-a .ui-block-b,
+	#home .ui-grid-b .ui-block-a,
+	#home .ui-grid-b .ui-block-b,
+	#home .ui-grid-b .ui-block-c {
+		width: 100%;
+}
+	#contact .ui-grid-a .ui-block-a,
+	#contact .ui-grid-a .ui-block-b {
+		width: 100%;
+	}
+}
+
