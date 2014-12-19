@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # [jPlayer](http://jplayer.org/) : HTML5 Audio & Video for [jQuery](http://jquery.com/)
 
 Support for [Zepto](http://zeptojs.com/) 1.0+ compiled with the data module.
@@ -34,3 +35,9 @@ _(*) Optional counterpart formats to increase HTML5 cross-browser support._
 ## Author:
 Mark J Panaghiston [@thepag](http://twitter.com/thepag)
 [happyworm.com](http://happyworm.com/)
+=======
+Assignment 3 files for DGMD E-20.
+===========
+
+Parts 1-3 for Assignment 3
+>>>>>>> FETCH_HEAD
